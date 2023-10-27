@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where should we ride?</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!--Add mine-->
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,700;1,100;1,200;1,300;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+    
+    <!--Styles-->   
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+ 
+
+    <!--Recuired links and styles for the map to work:-->
+    <!--https://maplibre.org/
+    -->
+    <script src="https://unpkg.com/maplibre-gl@3.3.0/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl@3.3.0/dist/maplibre-gl.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="body-wrapper">
+        <div class="header">
+            <h1>Where should we ride?</h1>
+        </div>
+        <!--we using id because? -->
+        <div class="wrapper" >
+            <!--Map element-->
+            <div id="map" class="map"></div>
+            <!--The movable marker on th map:-->
+            <pre id="coordinates" class="coordinates"></pre>
+
+            <!--loader-->
+            <div class="loader" id="loader" ></div>
+            <!--Quote element-->
+            <div class="list-wrapper" id="wrapper">
+                <p id="no-trails" class="no-trails"></p>
+                <ul id="trails" class="trails">
+                    <!--List o be created with JavaScript-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>
